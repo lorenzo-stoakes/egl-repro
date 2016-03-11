@@ -1,4 +1,7 @@
 FROM resin/raspberrypi2-debian
+
+ENV INITSYSTEM on
+
 RUN apt-get update -y; \
     apt-get install -y \
     build-essential \
