@@ -9,6 +9,10 @@ The issue, reported as [issue #532][issue-firmware] in the
 interaction of EGL with [PID namespaces][pid-namespaces] which comes up when
 running an EGL application inside a container.
 
+__IMPORTANT:__ You need to allocate more GPU memory than the resin default, add
+a new config variable in the 'Environment Variables' section of the device
+dashboard with key `RESIN_HOST_CONFIG_gpu_mem` and value `64` (I find 64MiB
+works.)
 
 [EGL]:https://en.wikipedia.org/wiki/EGL_(API)
 [issue-firmware]:https://github.com/raspberrypi/firmware/issues/532
