@@ -1,5 +1,11 @@
 # EGL Repro
 
+__UPDATE:__ Doh! The repro is designed to work outside of Docker, so it's
+totally not necessary to run repro.c (other than to play with nesting of PID
+namespaces :), however this repo now defaults to _just_ running hello triangle
+to trigger the issue when using resin (or docker direct on the device), but
+provides the repro file in case you want to run this outside of docker.
+
 A [resin.io](https://resin.io) project designed to trigger a repro of an
 [EGL][EGL] issue on raspberry pi 2.
 
